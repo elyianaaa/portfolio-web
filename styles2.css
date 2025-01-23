@@ -1,138 +1,155 @@
-/* Resetting all margins and padding for the whole page */
 body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
 }
 
 html {
-    height: 100%;  /* Full height for the HTML element */
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
     margin: 0;
-    padding: 0;
-    height: 100%;  /* Ensure the body fills the entire viewport */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;  /* Prevent scrolling on the body */
+    padding-top: 60px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #2c3e50;
     text-align: center;
 }
 
 p {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    line-height: 1.8;
     color: #555;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 20px 0;
 }
 
-ul li {
-    font-size: 1.1rem;
-    margin: 10px 0;
-    text-align: left;
+a {
+    text-decoration: none;
+    color: #2980b9;
 }
 
-.rating {
-    font-size: 1.2rem;
-    color: #f39c12;
+a:hover {
+    color: #3498db;
 }
 
-/* Navigation bar */
-nav {
+header nav {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #53778d;
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #9fcded;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    box-shadow: 0 4px 2px -2px gray;
 }
 
-nav a {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    font-size: 18px;
+header nav a {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
     text-transform: uppercase;
-    padding: 10px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #ecf0f1;
+header nav a:hover {
+    color: #3498db;
 }
 
-/* Container holding the content */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    padding: 0 20px;  /* Remove extra padding */
-    width: 100%;
-    height: 100vh;  /* Full viewport height */
-    overflow: hidden;  /* Prevent scroll from this container */
-}
-
-/* Left image section */
-.image-section {
-    flex: 1;
+/* Project Overview */
+.project-overview {
+    padding: 80px 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
-    max-width: 400px; /* Restrict max width of image */
 }
 
-.image-section img {
-    width: 100%;
-    height: auto;
-    max-width: 400px; /* Restrict max width to avoid overflow */
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-/* Right text section */
-.text-section {
-    flex: 1;
-    max-width: 600px;
-    text-align: left;
-    padding: 20px;
-}
-
-/* Heading styling */
-.text-section h1 {
+.project-overview h1 {
     font-size: 2.5rem;
+    color: #2980b9;
     margin-bottom: 20px;
 }
 
-.text-section h2 {
-    margin-top: 20px;
-    font-size: 1.8rem;
+.project-overview p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
+/* Flex Container for Image and Text */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1 1 45%; /* Image will take up 45% of the space */
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.text-section {
+    flex: 1 1 50%; /* Text will take up 50% of the space */
+    max-width: 700px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px; /* Adds some space between the image and text */
+}
+
+.text-section ul {
+    list-style: disc;
+    margin-left: 40px;
+}
+
+.text-section ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.text-section h2 {
+    font-size: 2rem;
+    color: #3498db;
+    margin-top: 30px;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
 footer {
-    background-color: #34495e;
-    color: #ecf0f1;
-    text-align: center;
+    background-color: #53778d;
+    color: #CAE9FF; 
     padding: 20px 0;
     font-size: 0.8rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
 }
+
+
+
+
 
 
 

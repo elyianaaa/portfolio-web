@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nurul Elyiana - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
+
 <body>
+    <!-- Navigation -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">My Skills</a></li>
             <li><a href="#projects">My Works</a></li>
             <li><a href="#contact">Contact Me</a></li>
         </ul>
@@ -22,43 +23,44 @@
     <section id="home">
         <div class="container">
             <div class="text-section">
+                <!-- Profile Picture -->
+                <div class="profile-picture">
+                    <img src="images/profile.jpg" alt="Nurul Elyiana" class="profile-img">
+                </div>
+    
                 <h1 class="h1" style="font-size: 70px;">Nurul Elyiana</h1>
-                <p>I specialize in design and website development, with knowledge in both areas. With a background in computer science, I have honed my skills in both front-end and back-end technologies.</p>
-                <p>Scroll down to explore my work and my skills down below!</p>
+                <p>I specialize in design and website development, with expertise in both areas. With a background in
+                    computer science, I have honed my skills in both front-end and back-end technologies.</p>
+                <p>Scroll down to explore my work and skills!</p>
             </div>
         </div>
     </section>
+    
 
-<!-- About Me Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Elyiana, an aspiring designer based in Singapore. I have a background in digital design and development as well as a passion for graphic editing. I love turning ideas into reality and constantly learning new technologies. When I'm not editing, you can find me exploring, traveling, experimenting with recipes, or playing video games.</p>
-    <p>Here are a few highlights about me:</p>
-    <ul>
-        <li>Graduated with a degree in Computer Science from National University of Singapore (NUS).</li>
-        <li>Worked with various startups and businesses to develop custom web solutions.</li>
-        <li>Passionate about clean code, design patterns, and user experience.</li>
-    </ul>
-    <p>I’m always open to discussing exciting new projects or sharing ideas over a cup of coffee!</p>
-</section>
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Elyiana, an aspiring designer based in Singapore. I have a background in digital design and 
+            development, and I'm passionate about graphic editing.
+        </p>
+        <p>Here are a few highlights about me:</p>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>I have a wide variety of skills, from design all the way to development.</p>
-        <ul>
-            <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js</li>
-            <li><strong>Backend Development:</strong> Python, Express.js</li>
-            <li><strong>Database Management:</strong> MySQL, MongoDB</li>
-            <li><strong>Version Control:</strong> Git, GitHub</li>
-            <li><strong>Design:</strong> Adobe Photoshop, Adobe Illustrator, Adobe After Effects, Unity</li>
-        </ul>
-        <p>Additionally, I am proficient in problem-solving, debugging, and writing efficient, scalable code.</p>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>I have a wide variety of skills, from design to development.</p>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript, React.js, Node.js</li>
+                <li><strong>Backend Development:</strong> Python, Express.js</li>
+                <li><strong>Database Management:</strong> MySQL, MongoDB</li>
+                <li><strong>Version Control:</strong> Git, GitHub</li>
+                <li><strong>Design:</strong> Adobe Photoshop, Adobe Illustrator, Adobe After Effects, Unity</li>
+            </ul>
+            <p>I'm well rounded in both design and development aspect of technology and I'm always open to discussing more!</p>
+        </section>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-
         <!-- Filter Buttons -->
         <div class="filter-buttons">
             <button onclick="filterProjects('all')">All</button>
@@ -66,8 +68,8 @@
             <button onclick="filterProjects('development')">Development</button>
         </div>
 
+        <!-- Project Container -->
         <div class="project-container">
-            <!-- Project 1 (Design) -->
             <div class="project-item" data-category="design">
                 <a href="work1.html">
                     <h3>Project 1: Graphic Design</h3>
@@ -75,8 +77,7 @@
                     <p>A poster design made using Adobe tools, based on a song.</p>
                 </a>
             </div>
-            
-            <!-- Project 2 (Development) -->
+
             <div class="project-item" data-category="design">
                 <a href="work2.html">
                     <h3>Project 2: Concert Diary Website</h3>
@@ -84,8 +85,7 @@
                     <p>A poster design made using Adobe tools, based on a song.</p>
                 </a>
             </div>
-            
-            <!-- Project 3 (Design) -->
+
             <div class="project-item" data-category="design">
                 <a href="work3.html">
                     <h3>Project 3: Graphic Design</h3>
@@ -93,47 +93,55 @@
                     <p>A poster design made using Adobe tools, based on a new album.</p>
                 </a>
             </div>
-            
-            <!-- Project 4 (Design) -->
+
             <div class="project-item" data-category="design">
                 <a href="work4.html">
                     <h3>Project 4: Graphic Design</h3>
-                    <img src="images/MARK.png" alt="Design 2" class="project-image">
-                    <p>A poster design made using Adobe tools, based on a song.</p>
+                    <img src="images/highfidelity.png" alt="Design 2" class="project-image">
+                    <p>A high fidelity figma project for a Style Shop.</p>
                 </a>
             </div>
-            
-            <!-- Project 5 (Design) -->
-            <div class="project-item" data-category="design">
-                <a href="work5.html">
-                    <h3>Project 5: Graphic Design</h3>
-                    <img src="images/emohaechan.png" alt="Design 2" class="project-image">
-                    <p>A poster design made using Adobe tools, based on a person.</p>
-                </a>
-            </div>
-            
 
-            <!-- Project 6 (Design) -->
+            <div class="project-item" data-category="development">
+                <a href="work5.html">
+                    <h3>Project 5: Pizza Website</h3>
+                    <img src="images/pizzaApp.png" alt="Pizza Website" class="project-image">
+                    <p>A website about a Pizza Shop, created using React.</p>
+                </a>
+            </div>
+
             <div class="project-item" data-category="development">
                 <a href="work6.html">
-                    <h3>Project 6: VR Game</h3>
-                    <img src="images/.png" alt="Design 2" class="project-image">
-                    <p>A VR escape room game made using Unity.</p>
+                    <h3>Project 6: VR Escape Room Game</h3>
+                    <img src="images/vrescaperoom.png" alt="VR Escape Room" class="project-image">
+                    <p>A VR escape room game made using Unity, filled with different puzzles.</p>
                 </a>
             </div>
+
+            <div class="project-item" data-category="development">
+                <a href="work7.html">
+                    <h3>Project 7: Travelling List Website</h3>
+                    <img src="images/travelList.png" alt="Travelling List" class="project-image">
+                    <p>A website created using React to help users track items for a trip.</p>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Please feel free to contact me at any given time using the methods down below! I look forward to it!</p>
+        <h2>Contact Me</h2>
+        <p>Please feel free to reach out at any time using the contact methods below! I'm always excited to connect with
+            like-minded professionals!</p>
         <ul>
             <li>Email: <a href="mailto:23016791@myrp.edu.sg">23016791@myrp.edu.sg</a></li>
             <li>Phone: <a href="tel:+97480003">+65 9748 0003</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/nurulelyiana" target="_blank">linkedin.com/in/nurulelyiana</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/nurulelyiana"
+                    target="_blank">linkedin.com/in/nurulelyiana</a></li>
             <li>GitHub: <a href="https://github.com/elyianaaa" target="_blank">github.com/elyianaaa</a></li>
         </ul>
-        <p>I am open to freelance opportunities, collaboration, or just chatting about the latest in web development. Let’s connect!</p>
+        <p>I'm open to freelance opportunities, collaborations, or just chatting about the latest trends in web
+            development.</p>
     </section>
 
     <footer>
@@ -143,34 +151,35 @@
     <script>
         function filterProjects(category) {
             const allProjects = document.querySelectorAll('.project-item');
-            allProjects.forEach(project => {
-                if (project.dataset.category === category || category === 'all') {
-                    project.style.display = 'block'; // Display the project
-                    setTimeout(() => {
-                        project.classList.add('visible'); // Add visible class for fading in
-                        project.classList.remove('hidden'); // Remove hidden class to show
-                    }, 10); // Short delay to ensure CSS can apply
-                } else {
-                    project.classList.remove('visible'); // Remove visible class to hide
-                    project.classList.add('hidden'); // Add hidden class to fade out
 
-                    // Wait for fade-out to complete before setting display to none
-                    project.addEventListener('transitionend', function() {
+            allProjects.forEach(project => {
+                const projectCategory = project.getAttribute('data-category');
+
+                if (category === 'all' || projectCategory === category) {
+                    project.style.display = 'block'; 
+                    setTimeout(() => {
+                        project.classList.add('visible'); 
+                        project.classList.remove('hidden'); 
+                    }, 10); 
+                } else {
+                    project.classList.remove('visible'); 
+                    project.classList.add('hidden');
+
+                    
+                    project.addEventListener('transitionend', function () {
                         if (project.classList.contains('hidden')) {
-                            project.style.display = 'none'; // Hide the project after fade out
+                            project.style.display = 'none'; 
                         }
-                    }, { once: true }); // Ensure this event only runs once
+                    }, { once: true });
                 }
             });
         }
 
-        // Optional: Fade in all projects on page load
         window.onload = () => {
-            filterProjects('all'); // Show all projects with fade-in effect on load
+            filterProjects('all');
         };
+
     </script>
 </body>
+
 </html>
-
-
-
